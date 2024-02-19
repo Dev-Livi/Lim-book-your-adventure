@@ -1,0 +1,154 @@
+
+body {
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-size:16px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.square {
+    width: 70vw; 
+    height: 90vh; 
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.square .logo {
+    width: 15vw;
+    height: auto;
+    padding-top: 5%;
+}
+
+.square .slogan {
+    color: white;
+    margin-top: 24px; 
+    font-weight: 400;
+    font-size: 18px; 
+    color:#00DD00;
+    text-transform: capital;
+}
+
+.button-container{
+    width:80%;
+    height:auto;
+    border-radius:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00DD00;
+}
+
+.button-container .button{
+    margin:1% 1%;
+    border-radius:2px;
+    border: 1px solid black; 
+    outline: none; 
+}
+/*---*/
+.square .data-container{
+    width: 80%; 
+    height: 50vh; 
+    border-radius:10 px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.square .data-container label.checkbox-container {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight:500;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.square .data-container p{
+    color: rgb(255,255,255);
+    margin:0px 2px;
+    font-size:14px;
+    font-weight: 300;
+}
+
+.square .data-container .charge1{
+    width: 30%;
+    height: 25px;
+    border-radius: 5px;
+    background-color:#F5B453;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+/*---*/
+.square .data-container .charge2{
+    width: 70%;
+    height: 25px;
+    border-radius: 5px;
+    background-color:#1EC31E;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.square .data-container .charge3{
+    width: 20%;
+    height: 25px;
+    border-radius: 5px;
+    background-color:#BE4141;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+
+@media (max-width: 425px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .square {
+        width: 90vw; 
+        height: 80vh; 
+    }
+
+    .square .logo {
+        width: 30vw; 
+        padding-top: 10%; 
+    }
+
+    .square .slogan {
+        font-size: 16px; 
+    }
+
+    .button-container {
+        width: 90%; 
+    }
+
+    .button-container .button {
+        margin: 2% 1%; 
+    }
+
+    .square .data-container {
+        width: 90%;
+    }
+
+    .square .data-container label.checkbox-container {
+        font-size: 18px; 
+    }
+
+    .square .data-container p {
+        font-size: 12px;
+    }
+
+    .square .data-container .charge1,
+    .square .data-container .charge2,
+    .square .data-container .charge3 {
+        height: 10px; 
+    }
+}
